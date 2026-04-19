@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<!-- TÍTULO -->
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-danger">Contáctanos</h1>
+    <p class="text-muted">Estamos listos para ayudarte </p>
+</div>
+
+<!-- FORMULARIO -->
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <div class="card contacto-card p-4">
+
+            <form method="POST">
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold"> Nombre</label>
+                    <input type="text" name="nombre" class="form-control input-pro" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold"> Email</label>
+                    <input type="email" name="email" class="form-control input-pro" placeholder="ejemplo@gmail.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold"> Mensaje</label>
+                    <textarea name="mensaje" class="form-control input-pro" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold boton-enviar">
+                     Enviar Mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

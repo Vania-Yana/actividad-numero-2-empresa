@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1>Bienvenidos a Servicios Tech</h1>
+        <p>Soluciones profesionales a tu alcance.</p>
+    </div>
+    <h3>Nuestros Servicios:</h3>
+    <ul class="list-group">
+        {% for servicio in servicios %}
+            <li class="list-group-item">{{ servicio }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
